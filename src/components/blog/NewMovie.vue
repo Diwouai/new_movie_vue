@@ -7,7 +7,7 @@
       :key="movie.id"
     >
       <!-- Article -->
-      <article class="overflow-hidden rounded-lg shadow-lg">
+      <article class="overflow-hidden rounded-lg shadow-lg dark:bg-gray-600">
         <router-link :to="`/movie/${movie.id}`">
           <img
             class="block h-auto w-full"
@@ -22,7 +22,7 @@
           <h1 class="text-lg">
             <router-link
               :to="`/movie/${movie.id}`"
-              class="text-black hover:text-teal-400"
+              class="text-black dark:text-white hover:text-teal-400"
               style="text-decoration: none"
               >{{ movie.title }}</router-link
             >

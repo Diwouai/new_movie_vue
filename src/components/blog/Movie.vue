@@ -1,26 +1,26 @@
 <template>
   <section class="container mx-auto px-6 p-10">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8 dark:text-white">
       {{ movie.title }}
     </h2>
     <div class="flex items-center flex-wrap mb-20">
       <div class="w-full md:w-1/2">
-        <h5 class="text-base text-gray-800 font-bold mb-3">
+        <h5 class="text-base text-gray-800 dark:text-white font-bold mb-3">
           Release Date : {{ formatDate(movie.release_date) }}
         </h5>
-        <h5 class="text-base text-gray-800 font-bold mb-3">
+        <h5 class="text-base text-gray-800 dark:text-white font-bold mb-3">
           Vote Average : {{ movie.vote_average }}
         </h5>
-        <h5 class="text-base text-gray-800 font-bold mb-3">
+        <h5 class="text-base text-gray-800 dark:text-white font-bold mb-3">
           Duration : {{ timeConvert(movie.runtime) }}
         </h5>
-        <h5 class="text-base text-gray-800 font-bold mb-3">
+        <h5 class="text-base text-gray-800 dark:text-white font-bold mb-3">
           Cast :
           <div>
             <span v-for="c in cast" :key="c.id">
               <router-link
                 :to="`/people/${c.id}`"
-                class="text-black hover:text-teal-400"
+                class="text-black dark:text-white hover:text-teal-400"
                 style="text-decoration: none"
               >
                 <b>{{ c.name }}</b> / <i>{{ c.character }}</i
@@ -29,7 +29,7 @@
             </span>
           </div>
         </h5>
-        <p class="text-gray-600 mb-8">
+        <p class="text-gray-600 dark:text-gray-300 mb-8">
           {{ movie.overview }}
         </p>
       </div>
