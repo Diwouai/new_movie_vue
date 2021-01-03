@@ -40,13 +40,13 @@
       >
         <div class="text-sm lg:flex-grow">
           <router-link
-            class="block mt-4 lg:inline-block lg:mt-0 text-green-100 hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-100 mr-4"
             to="/"
             style="text-decoration: none"
             >Home
           </router-link>
           <router-link
-            class="block mt-4 lg:inline-block lg:mt-0 text-green-100 hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-100 mr-4"
             to="/upcoming"
             style="text-decoration: none"
             >Upcoming
