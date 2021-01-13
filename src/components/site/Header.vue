@@ -58,11 +58,11 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    toogle_menu() {
-      document.getElementById("nav-content").classList.toggle("hidden");
+  export default {
+    methods: {
+      toogle_menu() {
+        document.getElementById('nav-content').classList.toggle('hidden');
+      },
     },
-  },
-};
+  };
 </script>

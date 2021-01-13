@@ -36,16 +36,16 @@
 </template>
 
 <script>
-import useMovies from "../../composables/blog/movies";
-import { onMounted } from "vue";
-export default {
-  setup() {
-    const { upcomingMovies, fetchUpcomingMovie, IMG_URL } = useMovies();
-    onMounted(() => fetchUpcomingMovie());
-    return {
-      upcomingMovies,
-      IMG_URL,
-    };
-  },
-};
+  import useMovies from '../../composables/blog/movies';
+  import { onMounted } from 'vue';
+  export default {
+    setup() {
+      const { upcomingMovies, fetchUpcomingMovie, IMG_URL } = useMovies();
+      onMounted(() => fetchUpcomingMovie());
+      return {
+        upcomingMovies,
+        IMG_URL,
+      };
+    },
+  };
 </script>

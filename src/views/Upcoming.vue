@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import NewMovie from "../components/blog/NewMovie.vue";
+  import NewMovie from '../components/blog/NewMovie.vue';
 
-export default {
-  name: "Upcoming",
-  components: {
-    NewMovie,
-  },
-};
+  export default {
+    name: 'Upcoming',
+    components: {
+      NewMovie,
+    },
+  };
 </script>

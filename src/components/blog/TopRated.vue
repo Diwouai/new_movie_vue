@@ -36,17 +36,17 @@
 </template>
 
 <script>
-import useMovies from "../../composables/blog/movies";
-import { onMounted } from "vue";
+  import useMovies from '../../composables/blog/movies';
+  import { onMounted } from 'vue';
 
-export default {
-  setup() {
-    const { movies, fetchTopMovie, IMG_URL } = useMovies();
-    onMounted(() => fetchTopMovie());
-    return {
-      movies,
-      IMG_URL,
-    };
-  },
-};
+  export default {
+    setup() {
+      const { movies, fetchTopMovie, IMG_URL } = useMovies();
+      onMounted(() => fetchTopMovie());
+      return {
+        movies,
+        IMG_URL,
+      };
+    },
+  };
 </script>
