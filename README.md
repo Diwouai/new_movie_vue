@@ -1,5 +1,5 @@
 # new_movie_vue
-
+Movie App build with Vue 3 Composition API and Vite
 ## Build Setup
 
 ```bash
